@@ -22,3 +22,5 @@ mongoose.connection.once("open", () => {
 
 })
 
+// client id = 
+// client server =  
