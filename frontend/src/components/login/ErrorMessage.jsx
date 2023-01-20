@@ -1,4 +1,4 @@
-const ErrorMessage = ({ message, arrowDir = "up", position = "up" }) => {
+const ErrorMessage = ({ message, arrowDir, position }) => {
   let arrowStyle = "";
   let locationstyle = "";
   switch (arrowDir) {
@@ -35,14 +35,11 @@ const ErrorMessage = ({ message, arrowDir = "up", position = "up" }) => {
 
   return (
     <div
-      className={`${locationstyle} shadow-lg shadow-red-600/50 rounded-lg
-                text-gray-100 text-md   lg:w-88  p-4 bg-red-600`}
+      className={`${locationstyle} shadow-lg shadow-red-600/50 rounded-lg text-gray-100 text-md   lg:w-88  p-4 bg-red-600`}
     >
-      dsfdsadsfasdfffdafsdf
+      {message}
       <div
-        className={`${arrowStyle} shadow-xl shadow-red-600/50 w-0 h-0 absolute
-                    border-l-[12px] border-l-transparent border-t-[14px] border-t-red-600
-                    border-r-[12px] border-r-transparent`}
+        className={`${arrowStyle} shadow-xl shadow-red-600/50 w-0 h-0 absolute   border-l-[12px] border-l-transparent border-t-[14px] border-t-red-600 border-r-[12px] border-r-transparent`}
       ></div>
     </div>
   );
