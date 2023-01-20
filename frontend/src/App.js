@@ -3,9 +3,9 @@ import Login from "./pages/Login";
 
 function App() {
   return (
-    <Routes>
+      <Routes>
         <Route path="/login" element={<Login />} />
-    </Routes>
+      </Routes>
   );
 }
 
